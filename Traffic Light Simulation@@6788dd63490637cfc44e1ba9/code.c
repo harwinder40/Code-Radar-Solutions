@@ -3,13 +3,17 @@
 int main() {
     char signal;
     scanf("%c",&signal);
-    if(signal=='R')
+    if(signal=='R'){
         printf("Stop");
-    else if(signal=='G')
+    }
+    else if(signal=='G'){
         printf("Go");
-    else if(signal=="Y")
+    }
+    else if(signal=="Y"){
         printf("Slow Down");
-    else
+        }
+            else{
         printf("Invalid input");
+            }
     return 0;
 }
