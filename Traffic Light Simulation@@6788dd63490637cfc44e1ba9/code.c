@@ -3,7 +3,7 @@
 int main() {
     char signal;
     scanf("%c",&signal);
-    if(signal=='R');
+    if(signal=='R')
         printf("Stop");
     else if(signal=='G')
         printf("Go");
