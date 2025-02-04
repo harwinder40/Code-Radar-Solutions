@@ -3,17 +3,23 @@
 int main() {
     char word;
     scanf("%c",&word);
-    if (word==A)
+    if (word==A){
         printf("Excellent");
-    else if(word==B)
+    }
+    else if(word==B){
         printf("Good");
-    else if(word==C)
+    }
+    else if(word==C){
         printf("Average");
-    else if(word==D)
+    }
+    else if(word==D){
         printf("Below Average");
-    else if(word==F)
+    }
+    else if(word==F){
         printf("Fail");
-    else
+    }
+    else{}
         printf("Invalid grade");
+}
     return 0;
 }
