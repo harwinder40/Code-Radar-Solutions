@@ -18,7 +18,7 @@ int main() {
     else if(word==F){
         printf("Fail");
     }
-    else{}
+    else{
         printf("Invalid grade");
 }
     return 0;
