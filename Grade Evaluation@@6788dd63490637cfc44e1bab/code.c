@@ -2,6 +2,7 @@
 
 int main() {
     char word;
+    scanf("%c",&word);
     if (word==A)
         printf("Excellent");
     else if(word==B)
