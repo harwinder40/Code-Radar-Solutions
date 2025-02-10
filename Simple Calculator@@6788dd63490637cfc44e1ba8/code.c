@@ -26,6 +26,5 @@ int main() {
     }
     else
     printf("Invaid Operator");
-    }
     return 0;
 }
