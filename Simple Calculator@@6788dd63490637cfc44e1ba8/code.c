@@ -2,39 +2,37 @@
 
 int main() {
     int a, b, result;
-    char op;  // Operator
+    char op;
 
-    // Taking user input for two numbers
-   
-    scanf("%d %d", &a, &b);
+    // Taking input from the user
+    if (scanf("%d %d%c", &a, &b, &op) != 3) {
+        printf("error\n");  // Error if input format is incorrect
+        return 1;
+    }
 
-    // Taking user input for the operator
-    
-    scanf(" %c", &op);  // Space before %c to handle newline issues
-
-    // Performing the operation using if-else statements
+    // Performing the operation based on the operator
     if (op == '+') {
         result = a + b;
         printf("%d\n", result);
     }
     else if (op == '-') {
         result = a - b;
-        printf(" %d\n", result);
+        printf("%d\n", result);
     }
     else if (op == '*') {
         result = a * b;
         printf("%d\n", result);
     }
     else if (op == '/') {
-        if (b != 0) {  // Avoid division by zero
+        if (b != 0) {
             result = a / b;
             printf("%d\n", result);
         } else {
-            printf();
+            printf("error\n");  // Error for division by zero
         }
     }
     else {
-        printf("Invalid operator\n");
+        printf("error\n");  // Error if an invalid operator is entered
     }
 
     return 0;
