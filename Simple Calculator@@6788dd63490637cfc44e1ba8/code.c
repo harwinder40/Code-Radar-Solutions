@@ -2,24 +2,26 @@
 
 
 int main() {
-    int a,b,c;
-    scanf("%d" "%d" "%d",&a,&b,&c);
-    c='+-*/';
-    d=a+b;
-    e=a-b;
-    f=a*b;
-    g=a/b;
-    if (c==+){
-        printf("%d",d);
+    int a,b,result;
+    char c;
+
+    scanf("%d" "%d" "%c",&a,&b,&c);
+    
+    if (c=='+'){
+        result=a+b;
+        printf("%d",result);
     }
-    else if (c==-){
-        printf("%d",e);
+    else if (c=='-'){
+        result=a-b;
+        printf("%d",result);
     }
-    else if (c==*){
-        printf("%d",f);
+    else if (c=='*'){
+        result=a+b;
+        printf("%d",result);
     }
-    else if (c==/){
-        printf("%d",g);
+    else if (c=='/'){
+        result=a/b;
+        printf("%d",result);
     }
     else
     printf("none");
