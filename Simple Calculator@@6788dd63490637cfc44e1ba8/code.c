@@ -5,7 +5,7 @@ int main() {
     char op;
 
     // Taking input from the user
-    if (scanf("%d %d%c", &a, &b, &op) != 3) {
+    if (scanf("%d %d %c", &a, &b, &op) != 3) {
         printf("error\n");  // Error if input format is incorrect
         return 1;
     }
