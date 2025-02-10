@@ -1,39 +1,34 @@
-#include <stdio.h>
-
-int main() {
-    int a, b, result;
-    char op;
-
-    // Taking input from the user
-    if (scanf("%d %d %c", &a, &b, &op) != 3) {
-        printf("error\n");  // Error if input format is incorrect
+#include<stdio.h>
+int main(){
+    int a,b,re;
+    char c;
+    if(scanf("%d" "%d" "%c",&a,&b,&c)!=3){
+        printf("Error");
         return 1;
     }
 
-    // Performing the operation based on the operator
-    if (op == '+') {
-        result = a + b;
-        printf("%d\n", result);
+    if (c=='+'){
+        re=a+b;
+        printf("%d",re);
     }
-    else if (op == '-') {
-        result = a - b;
-        printf("%d\n", result);
+    else if (c=='-'){
+        re=a-b;
+        printf("%d",re);
     }
-    else if (op == '*') {
-        result = a * b;
-        printf("%d\n", result);
+    else if (c=='*'){
+        re=a*b;
+        printf("%d",re);
     }
-    else if (op == '/') {
-        if (b != 0) {
-            result = a / b;
-            printf("%d\n", result);
-        } else {
-            printf("error\n");  // Error for division by zero
+    else if(c=='/'){
+        if (b>0){
+            re=a/b;
+            printf("%d",re);
+        }
+        else{
+            printf("Cannot divide by 0");
         }
     }
-    else {
-        printf("error\n");  // Error if an invalid operator is entered
+    else{
+        printf("Invalid Operator");
     }
-
-    return 0;
 }
