@@ -3,15 +3,15 @@ int main(){
     int a,b,re;
     char c;
     if(scanf("%d" "%d" "%c",&a,&b,&c)!=3){
-        printf("Error");
+        printf("error");
         return 1;
     }
 
-    if (c=='+'){
+    if (c== '+'){
         re=a+b;
         printf("%d",re);
     }
-    else if (c=='-'){
+    else if (c== '-'){
         re=a-b;
         printf("%d",re);
     }
@@ -20,7 +20,7 @@ int main(){
         printf("%d",re);
     }
     else if(c=='/'){
-        if (b>0){
+        if (b!=0){
             re=a/b;
             printf("%d",re);
         }
@@ -29,6 +29,6 @@ int main(){
         }
     }
     else{
-        printf("Invalid Operator");
+        printf("Error");
     }
 }
